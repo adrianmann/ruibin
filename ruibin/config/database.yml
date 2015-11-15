@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: ruibin_dev
+  pool: 5
+  username:
+  password:
+
+test: &TEST
+  adapter: postgresql
+  encoding: utf8
+  database: ruibin_test
+  pool: 5
+  username: 
+  password:
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: ruibin_production
+  pool: 5
+  username:
+  password:

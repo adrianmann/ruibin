@@ -1,0 +1,19 @@
+<div class="page-header">
+  <h2>Listing companies</h2>
+  <p>Do you want to code in Ruby everyday in Ireland? Maybe you will find your dream role below....</p>
+  <p>More to follow</p>
+</div>
+
+<% if !@companies.empty? %>
+  <% @companies.each do |company| %>
+    <div class="status">
+      <p><a href="<%= company.careers_url %>" target="blank"><%= company.name %></a></p>
+    </div>
+  <% end %>
+
+  <br>
+<% else %>
+  <div class="status">
+    <p>There are no companies available.</p>
+  </div>
+<% end %>
