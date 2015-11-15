@@ -16,8 +16,9 @@ test: &TEST
 
 production:
   adapter: postgresql
+  host: ec2-107-21-219-201.compute-1.amazonaws.com
   encoding: utf8
-  database: ruibin_production
+  database: d4hoc9i1g8u7ge
   pool: 5
   username: pyengrvavfunri
   password: oB8HWhxHALM4uxTUM6LH1Dmd-E
