@@ -36,6 +36,9 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.10.0)
+    dotenv (2.0.0)
+    dotenv-rails (2.0.0)
+      dotenv (= 2.0.0)
     erubis (2.7.0)
     execjs (2.6.0)
     hike (1.2.3)
@@ -52,7 +55,7 @@ GEM
     mime-types (2.6.2)
     minitest (5.8.2)
     multi_json (1.11.2)
-    pg (0.18.2)
+    pg (0.18.4)
     rack (1.5.5)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -109,6 +112,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  dotenv-rails (= 2.0.0)
   jbuilder (~> 2.0)
   jquery-rails
   pg
