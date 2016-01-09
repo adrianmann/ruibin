@@ -1,19 +1,18 @@
 <div class="page-header">
-  <h2>Listing companies</h2>
+  <h2>Ruby Jobs in Ireland</h2>
   <p>Do you want to code in Ruby everyday in Ireland? Maybe you will find your dream role below....</p>
-  <p>More to follow</p>
+  <p>If you have any queries you can contact me on <a href="twitter.com/AdrianMann">Twitter</a>.</p>
 </div>
 
-<% if !@companies.empty? %>
-  <% @companies.each do |company| %>
-    <div class="status">
-      <p><a href="<%= company.careers_url %>" target="blank"><%= company.name %></a></p>
-    </div>
-  <% end %>
-
-  <br>
-<% else %>
+<div class="body">
   <div class="status">
-    <p>There are no companies available.</p>
+    <% @companies.each do |company| %>
+        <p><a href="<%= company.careers_url %>" target="blank"><%= company.name %></a></p>
+    <% end %>
   </div>
-<% end %>
+
+  <div class="twitter">
+    <a class="twitter-timeline" href="https://twitter.com/search?q=ruby%20job%20dublin" data-widget-id="685933967015546884">Tweets about ruby job dublin</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+</div>
