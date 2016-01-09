@@ -1,5 +1,5 @@
 class CompaniesController < ApplicationController
   def index
-    @companies = Company.all
+    @companies = Company.order('companies.name ASC').all
   end
 end
